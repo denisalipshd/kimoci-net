@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kimoci NET - Fiber Optic Premium Unlimited</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "Montserrat", sans-serif;
+      }
+      .glass {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+      }
+      .gradient-text {
+        background: linear-gradient(90deg, #dc2626, #ef4444);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .swiper-pagination-bullet-active {
+        background: #dc2626 !important;
+      }
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+      }
+      .faq-item.active .faq-answer {
+        max-height: 200px;
+      }
+      .faq-item.active .fa-chevron-down {
+        transform: rotate(180deg);
+      }
+    </style>
+  </head>
+
+  <body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+    <nav class="glass fixed w-full top-0 z-[100] border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+        <a href="#" class="flex items-center gap-2 text-2xl font-bold text-red-600 tracking-tighter">
+          Kimoci<span class="text-slate-900">NET</span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-10 font-medium text-slate-600">
+          <a href="#" class="hover:text-red-600 transition-colors">Home</a>
+          <a href="#fitur" class="hover:text-red-600 transition-colors">Keunggulan</a>
+          <a href="#paket" class="hover:text-red-600 transition-colors">Paket</a>
+          <a href="#faq" class="hover:text-red-600 transition-colors">FAQ</a>
+          <a
+            href="https://wa.me/62812345678"
+            class="bg-red-600 hover:bg-red-700 text-white px-7 py-3 rounded-full shadow-lg shadow-red-200 transition-all hover:-translate-y-1"
+          >
+            Daftar Sekarang
+          </a>
+        </div>
+
+        <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 p-6 absolute w-full shadow-xl">
+        <div class="flex flex-col gap-4 text-center font-medium">
+          <a href="#" class="py-2">Home</a>
+          <a href="#fitur" class="py-2 border-t`">Keunggulan</a>
+          <a href="#paket" class="py-2 border-t">Paket</a>
+          <a href="#faq" class="py-2 border-t border-b">FAQ</a>
+          <a href="#" class="bg-red-600 text-white py-3 rounded-xl mt-2">Mulai Berlangganan</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden group">
+      <div class="absolute inset-0 z-0">
+        <img
+          src="assets/img/hero.jpg"
+          alt="High Speed Internet Background"
+          class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/80 to-transparent"></div>
+      </div>
+
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-red-600 rounded-full blur-[120px] opacity-20 z-10"></div>
+
+      <div class="max-w-7xl mx-auto px-6 w-full relative z-20">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+          <div data-aos="fade-right">
+            <span
+              class="inline-block px-4 py-2 bg-red-600/20 backdrop-blur-sm border border-red-500/30 text-red-400 rounded-full text-sm font-semibold mb-6"
+            >
+              🚀 #1 Partner Digital Terbaik untuk Keluarga & Bisnis
+            </span>
+
+            <h1 class="text-5xl md:text-7xl font-bold leading-[1.1] text-white">
+              Internet <span class="text-red-500">Ngebut</span> <br />
+              Tanpa Batas.
+            </h1>
+
+            <p class="mt-8 text-xl text-slate-300 leading-relaxed max-w-xl">
+              Nikmati internet stabil untuk seluruh keluarga. Tanpa drama kuota habis, tanpa lemot, dengan harga yang
+              jujur dan transparan.
+            </p>
+
+            <div class="mt-10 flex flex-wrap gap-5">
+              <a
+                href="#paket"
+                class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-xl shadow-red-900/20 transition-all transform hover:scale-105 active:scale-95"
+              >
+                Lihat Pilihan Paket
+              </a>
+              <a
+                href="#fitur"
+                class="flex items-center gap-3 text-white font-semibold hover:text-red-400 transition-colors"
+              >
+                <div
+                  class="w-12 h-12 flex items-center justify-center bg-white/10 backdrop-blur-md border border-white/20 rounded-full shadow-md"
+                >
+                  <i class="fa-solid fa-play ml-1"></i>
+                </div>
+                Kenapa Harus Kami?
+              </a>
+            </div>
+          </div>
+
+          <div class="relative hidden md:flex justify-end" data-aos="zoom-in">
+            <div class="bg-white/10 backdrop-blur-lg p-8 rounded-[2rem] border border-white/20 shadow-2xl">
+              <div class="flex flex-col items-center gap-4">
+                <div
+                  class="w-20 h-20 bg-red-600 text-white rounded-full flex items-center justify-center text-3xl animate-pulse"
+                >
+                  <i class="fa-solid fa-gauge-high"></i>
+                </div>
+                <div class="text-center">
+                  <p class="text-slate-300 text-sm uppercase tracking-widest">Real-time Speed</p>
+                  <p class="font-bold text-5xl text-white mt-2">
+                    98.5 <span class="text-xl font-normal text-slate-400">Mbps</span>
+                  </p>
+                </div>
+                <div class="w-full h-2 bg-slate-700 rounded-full mt-4 overflow-hidden">
+                  <div class="h-full bg-red-500 w-[85%] rounded-full shadow-[0_0_15px_rgba(239,68,68,0.8)]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fitur" class="py-24 bg-white relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6" data-aos="fade-up">
+          <div class="max-w-2xl">
+            <h2 class="text-red-600 font-bold tracking-widest uppercase text-sm mb-3">Mengapa Kimoci NET?</h2>
+            <h3 class="text-4xl md:text-5xl font-bold text-slate-900 leading-tight">
+              Standar Baru Internet <br />
+              Rumah & Bisnis.
+            </h3>
+          </div>
+          <p class="text-slate-500 text-lg max-w-sm">
+            Kami tidak hanya memberikan koneksi, tapi juga pengalaman digital terbaik tanpa kompromi.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            class="md:col-span-2 bg-slate-50 p-10 rounded-[2.5rem] border border-slate-100 flex flex-col justify-between group hover:bg-red-600 transition-all duration-500"
+            data-aos="fade-right"
+          >
+            <div>
+              <div
+                class="w-16 h-16 bg-white rounded-2xl shadow-sm flex items-center justify-center text-red-600 text-2xl mb-8 group-hover:scale-110 transition-transform"
+              >
+                <i class="fa-solid fa-infinity"></i>
+              </div>
+              <h4 class="text-2xl font-bold mb-4 group-hover:text-white transition-colors">
+                Tanpa Batas Kuota (Unlimited)
+              </h4>
+              <p class="text-slate-500 group-hover:text-red-100 transition-colors leading-relaxed max-w-md">
+                Lupakan batasan kuota. Di Kimoci NET, kecepatan internet Anda konsisten dari awal hingga akhir bulan.
+                Bebas download, streaming, dan kerja sepuasnya tanpa khawatir kecepatan menurun.
+              </p>
+            </div>
+            <div class="mt-10 flex gap-2">
+              <span class="px-4 py-1 bg-white/20 rounded-full text-xs font-semibold group-hover:text-white"
+                >#KuotaUnlimited</span
+              >
+              <span class="px-4 py-1 bg-white/20 rounded-full text-xs font-semibold group-hover:text-white"
+                >#HargaTetap</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-slate-900 p-10 rounded-[2.5rem] text-white flex flex-col justify-between relative overflow-hidden group"
+            data-aos="fade-left"
+          >
+            <div
+              class="absolute -right-10 -top-10 w-40 h-40 bg-red-600/20 rounded-full blur-3xl group-hover:bg-red-600/40 transition-all"
+            ></div>
+            <div>
+              <div
+                class="w-16 h-16 bg-slate-800 rounded-2xl flex items-center justify-center text-red-500 text-2xl mb-8"
+              >
+                <i class="fa-solid fa-gamepad"></i>
+              </div>
+              <h4 class="text-2xl font-bold mb-4">Ultra Low Latency</h4>
+              <p class="text-slate-400 leading-relaxed">
+                Ping stabil dan rendah untuk pengalaman gaming kompetitif tanpa interupsi.
+              </p>
+            </div>
+            <div class="mt-10 border-t border-slate-800 pt-6">
+              <span class="text-red-500 font-mono text-sm tracking-tighter">LATENCY < 5ms</span>
+            </div>
+          </div>
+
+          <div
+            class="bg-white border-2 border-slate-100 p-10 rounded-[2.5rem] hover:border-red-600 transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="w-14 h-14 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center text-xl mb-6">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-3 text-slate-900">Support 24/7</h4>
+            <p class="text-slate-500 text-sm leading-relaxed">
+              Tim teknisi lokal yang siap siaga membantu Anda kapanpun dibutuhkan, bahkan di hari libur.
+            </p>
+          </div>
+
+          <div
+            class="bg-white border-2 border-slate-100 p-10 rounded-[2.5rem] hover:border-red-600 transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-xl mb-6">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-3 text-slate-900">Perangkat Premium</h4>
+            <p class="text-slate-500 text-sm leading-relaxed">
+              Kami hanya menggunakan router Dual-Band berkualitas tinggi untuk jangkauan sinyal yang lebih luas dan
+              stabil.
+            </p>
+          </div>
+
+          <div
+            class="bg-white border-2 border-slate-100 p-10 rounded-[2.5rem] hover:border-red-600 transition-all duration-300"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="w-14 h-14 bg-green-50 text-green-600 rounded-2xl flex items-center justify-center text-xl mb-6">
+              <i class="fa-solid fa-calendar-check"></i>
+            </div>
+            <h4 class="text-xl font-bold mb-3 text-slate-900">Instalasi Ekspres</h4>
+            <p class="text-slate-500 text-sm leading-relaxed">
+              Proses survei dan instalasi yang cepat. Daftar hari ini, besok langsung bisa internetan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="paket" class="py-24 bg-white relative">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+          <h2 class="text-4xl font-bold mb-4">Paket Internet Pilihan</h2>
+          <p class="text-slate-500 text-lg">Investasi terbaik untuk produktivitas keluarga dan bisnis Anda.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-slate-50 border border-slate-100 rounded-3xl p-10 hover:shadow-2xl transition-all group"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <h3 class="text-xl font-bold mb-2">Essential</h3>
+            <p class="text-slate-500 text-sm mb-6">Cocok untuk browsing & sosmed.</p>
+            <div class="flex items-baseline gap-1 mb-8">
+              <span class="text-4xl font-black">Rp199k</span>
+              <span class="text-slate-400">/bln</span>
+            </div>
+            <ul class="space-y-4 mb-10 text-slate-600">
+              <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i> Up to 20 Mbps</li>
+              <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i> Unlimited Tanpa FUP</li>
+              <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i> Single Band Router</li>
+              <li class="opacity-40"><i class="fa-solid fa-circle-xmark mr-2"></i> Prioritas CS</li>
+            </ul>
+            <a
+              href="#"
+              class="block w-full text-center py-4 rounded-xl border-2 border-slate-900 font-bold hover:bg-slate-900 hover:text-white transition-all"
+              >Pilih Paket</a
+            >
+          </div>
+
+          <div
+            class="bg-slate-900 text-white rounded-3xl p-10 shadow-2xl shadow-red-200 relative transform scale-105 z-20"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="absolute -top-5 left-1/2 -translate-x-1/2 bg-red-600 text-white px-6 py-1 rounded-full text-sm font-bold uppercase tracking-widest"
+            >
+              Paling Laris
+            </div>
+            <h3 class="text-xl font-bold mb-2">Premium Family</h3>
+            <p class="text-slate-400 text-sm mb-6">Terbaik untuk 4-6 perangkat.</p>
+            <div class="flex items-baseline gap-1 mb-8">
+              <span class="text-4xl font-black">Rp299k</span>
+              <span class="text-slate-400">/bln</span>
+            </div>
+            <ul class="space-y-4 mb-10">
+              <li><i class="fa-solid fa-circle-check text-red-500 mr-2"></i> Up to 50 Mbps</li>
+              <li><i class="fa-solid fa-circle-check text-red-500 mr-2"></i> Unlimited Tanpa FUP</li>
+              <li><i class="fa-solid fa-circle-check text-red-500 mr-2"></i> Dual Band AC Router</li>
+              <li><i class="fa-solid fa-circle-check text-red-500 mr-2"></i> Dukungan Prioritas</li>
+            </ul>
+            <a
+              href="#"
+              class="block w-full text-center py-4 rounded-xl bg-red-600 hover:bg-red-700 font-bold shadow-lg transition-all"
+              >Daftar Sekarang</a
+            >
+          </div>
+
+          <div
+            class="bg-slate-50 border border-slate-100 rounded-3xl p-10 hover:shadow-2xl transition-all"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <h3 class="text-xl font-bold mb-2">Ultimate Pro</h3>
+            <p class="text-slate-500 text-sm mb-6">Khusus Gamer & Streamer.</p>
+            <div class="flex items-baseline gap-1 mb-8">
+              <span class="text-4xl font-black">Rp499k</span>
+              <span class="text-slate-400">/bln</span>
+            </div>
+            <ul class="space-y-4 mb-10 text-slate-600">
+              <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i> Up to 100 Mbps</li>
+              <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i> Unlimited Tanpa FUP</li>
+              <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i> WiFi 6 Router</li>
+              <li><i class="fa-solid fa-circle-check text-green-500 mr-2"></i> Dedicated Support 24/7</li>
+            </ul>
+            <a
+              href="#"
+              class="block w-full text-center py-4 rounded-xl border-2 border-slate-900 font-bold hover:bg-slate-900 hover:text-white transition-all"
+              >Pilih Paket</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-slate-50 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">Kepercayaan Pelanggan</h2>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide px-4">
+              <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 h-full">
+                <div class="flex gap-1 text-yellow-400 mb-4 text-sm">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-slate-600 italic mb-6">
+                  "Provider paling jujur. Katanya tanpa FUP, beneran dipake download ratusan giga speed tetep stabil!"
+                </p>
+                <div class="flex items-center gap-4">
+                  <div class="w-12 h-12 rounded-full bg-slate-200"></div>
+                  <div>
+                    <h4 class="font-bold">Budi Santoso</h4>
+                    <p class="text-xs text-slate-500">Video Editor</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide px-4">
+              <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 h-full">
+                <div class="flex gap-1 text-yellow-400 mb-4 text-sm">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-slate-600 italic mb-6">
+                  "Ping buat main Valorant kecil banget, gak pernah packet loss lagi semenjak ganti ke Kimoci NET."
+                </p>
+                <div class="flex items-center gap-4">
+                  <div class="w-12 h-12 rounded-full bg-slate-200"></div>
+                  <div>
+                    <h4 class="font-bold">Andhika</h4>
+                    <p class="text-xs text-slate-500">Competitive Gamer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide px-4">
+              <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-100 h-full">
+                <div class="flex gap-1 text-yellow-400 mb-4 text-sm">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-slate-600 italic mb-6">
+                  "CS-nya gercep. Ada kendala router langsung ditangani hari itu juga. Sangat puas!"
+                </p>
+                <div class="flex items-center gap-4">
+                  <div class="w-12 h-12 rounded-full bg-slate-200"></div>
+                  <div>
+                    <h4 class="font-bold">Santi Wijaya</h4>
+                    <p class="text-xs text-slate-500">Online Shop Owner</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination !-bottom-1 mr-10"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="py-24 bg-white">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center mb-16">Punya Pertanyaan?</h2>
+
+        <div class="space-y-4">
+          <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden active">
+            <button
+              class="faq-toggle w-full flex items-center justify-between p-6 text-left font-bold hover:bg-slate-50 transition-all"
+            >
+              <span>Apakah benar-benar tanpa batas (FUP)?</span>
+              <i class="fa-solid fa-chevron-down text-sm transition-transform"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-100 mt-4">
+                Ya, 100% Benar! Kimoci NET tidak menerapkan sistem FUP (Fair Usage Policy). Anda bisa menggunakan
+                internet sepuasnya tanpa takut kecepatan menurun di tengah bulan.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+            <button
+              class="faq-toggle w-full flex items-center justify-between p-6 text-left font-bold hover:bg-slate-50 transition-all"
+            >
+              <span>Berapa lama proses pemasangannya?</span>
+              <i class="fa-solid fa-chevron-down text-sm transition-transform"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-100 mt-4">
+                Setelah pendaftaran divalidasi, tim teknisi kami akan menjadwalkan instalasi maksimal 1x24 jam. Proses
+                pasang di rumah hanya memakan waktu sekitar 1-2 jam.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+            <button
+              class="faq-toggle w-full flex items-center justify-between p-6 text-left font-bold hover:bg-slate-50 transition-all"
+            >
+              <span>Apakah ada biaya tambahan bulanan?</span>
+              <i class="fa-solid fa-chevron-down text-sm transition-transform"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-100 mt-4">
+                Harga yang tertera adalah harga flat (tetap). Tidak ada biaya sewa alat tambahan. Pajak PPN 11% akan
+                ditambahkan sesuai regulasi pemerintah.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 pt-20 pb-10">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-12 mb-16">
+          <div class="col-span-1 md:col-span-2">
+            <a href="#" class="text-2xl font-bold text-white flex items-center gap-2 mb-6">
+              <i class="fa-solid fa-bolt-lightning text-red-600"></i> Kimoci NET
+            </a>
+            <p class="max-w-sm leading-relaxed">
+              Penyedia layanan internet ultra-cepat berbasis fiber optic murni. Berkomitmen menghubungkan setiap rumah
+              dengan dunia tanpa batasan.
+            </p>
+            <div class="flex gap-4 mt-8">
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-white hover:bg-red-600 transition-all"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-white hover:bg-red-600 transition-all"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-white hover:bg-red-600 transition-all"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-white font-bold mb-6">Navigasi</h4>
+            <ul class="space-y-4">
+              <li><a href="#" class="hover:text-red-500 transition-colors">Pilihan Paket</a></li>
+              <li><a href="#" class="hover:text-red-500 transition-colors">Cek Jangkauan</a></li>
+              <li><a href="#" class="hover:text-red-500 transition-colors">Layanan Bantuan</a></li>
+              <li><a href="#" class="hover:text-red-500 transition-colors">Syarat & Ketentuan</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-white font-bold mb-6">Kontak Kami</h4>
+            <ul class="space-y-4">
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-envelope text-red-600"></i> info@kimocinet.com
+              </li>
+              <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-red-600"></i> (021) 888-XXX-XXX</li>
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-location-dot text-red-600 mt-1"></i> Jakarta Head Office, Indonesia
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm"
+        >
+          <p>&copy; 2026 Kimoci NET. All rights reserved.</p>
+          <div class="flex gap-6">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/62812345678?text=Halo%20Kimoci%20NET,%20saya%20ingin%20tanya%20tentang%20paket%20internet"
+      target="_blank"
+      class="fixed bottom-6 right-6 z-[999] group flex items-center shadow-2xl"
+      aria-label="Chat WhatsApp"
+    >
+      <span
+        class="absolute right-full mr-4 bg-slate-900 text-white text-sm px-4 py-2 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none"
+      >
+        Tanya Admin
+      </span>
+
+      <div class="relative">
+        <div class="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-25"></div>
+
+        <div
+          class="relative bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-lg transform group-hover:scale-110 transition-transform duration-300"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+      </div>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      // AOS Animation
+      AOS.init({ duration: 1000, once: true });
+
+      // Swiper Config
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: { el: ".swiper-pagination", clickable: true },
+        breakpoints: {
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        },
+        autoplay: { delay: 3000 },
+      });
+
+      // FAQ Accordion
+      document.querySelectorAll(".faq-toggle").forEach((button) => {
+        button.addEventListener("click", () => {
+          const item = button.parentElement;
+          const isActive = item.classList.contains("active");
+
+          // Close all others
+          document.querySelectorAll(".faq-item").forEach((i) => i.classList.remove("active"));
+
+          // Toggle current
+          if (!isActive) item.classList.add("active");
+        });
+      });
+
+      // Mobile Menu
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
